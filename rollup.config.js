@@ -10,6 +10,7 @@ module.exports = [
     output: {
       file: "./dist/index.js",
       format: "es",
+      sourcemap: true,
     },
     plugins: [
       svelte({
@@ -21,7 +22,7 @@ module.exports = [
       dtsBundle({
         bundle: {
           name: "calendar-header",
-          main: "dist/dist/render.d.ts",
+          main: "dist/render.d.ts",
           out: "index.d.ts",
           removeSource: true,
         },

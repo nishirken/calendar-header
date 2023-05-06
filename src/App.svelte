@@ -18,7 +18,7 @@
 		if (bridge && bridge.interval) {
 			date = formatDate(bridge.interval);
 		}
-	};
+	}
 </script>
 
 <header class="header" data-test-id={headerTestIds.root}>

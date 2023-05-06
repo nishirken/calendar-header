@@ -27,6 +27,7 @@
     "svelte3/typescript": true
   },
   "rules": {
+    "quotes": ["error", "single"],
     "consistent-return": 2,
     "prettier/prettier": "error"
   }

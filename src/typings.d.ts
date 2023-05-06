@@ -1,4 +1,4 @@
 declare module '*.svelte' {
-    const value: any;
-    export = value;
+  const value: any;
+  export = value;
 }

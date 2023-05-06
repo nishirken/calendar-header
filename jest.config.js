@@ -4,6 +4,6 @@ module.exports = {
   globals: {
     'ts-jest': {
       tsconfig: 'tsconfig.spec.json',
-    }
-  }
+    },
+  },
 };

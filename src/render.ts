@@ -1,6 +1,6 @@
-import type { SvelteComponent } from "svelte";
-import App from "./App.svelte";
-import type { Bridge } from "./Bridge";
+import type { SvelteComponent } from 'svelte';
+import App from './App.svelte';
+import type { Bridge } from './Bridge';
 
 export * from './Bridge';
 export * from './Observable';
