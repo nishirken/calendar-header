@@ -22,6 +22,7 @@
     "@tsconfig/svelte": "^3.0.0",
     "@types/jest": "28.1.5",
     "@types/lodash": "4.14.182",
+    "calendar-test-ids": "github:nishirken/calendar-test-ids",
     "css-loader": "^6.7.3",
     "date-fns": "^2.29.3",
     "eslint-config-prettier": "8.5.0",

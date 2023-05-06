@@ -4,6 +4,7 @@
 	import '@material/mwc-icon/mwc-icon';
 	import type {Bridge} from './Bridge';
 	import {formatDate} from './formatDate';
+	import {headerTestIds} from 'calendar-test-ids';
 
 	const link = document.createElement('link');
 	link.href = 'https://fonts.googleapis.com/css?family=Material+Icons&display=block';
@@ -20,22 +21,22 @@
 	};
 </script>
 
-<header class="header">
+<header class="header" data-test-id={headerTestIds.root}>
 	<div class="content">
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
-		<wired-button class="today-button" on:click={bridge.onTodayClick}>Today</wired-button>
+		<wired-button class="today-button" data-test-id={headerTestIds.todayButton} on:click={bridge.onTodayClick}>Today</wired-button>
 		<div class="arrows">
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
-			<wired-icon-button class="arrow arrow-left" on:click={bridge.onArrowLeftClick}>
+			<wired-icon-button class="arrow arrow-left" data-test-id={headerTestIds.arrowLeft} on:click={bridge.onArrowLeftClick}>
 				<mwc-icon>arrow_back</mwc-icon>
 			</wired-icon-button>
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
-			<wired-icon-button class="arrow" on:click={bridge.onArrowRightClick}>
+			<wired-icon-button class="arrow" data-test-id={headerTestIds.arrowRight} on:click={bridge.onArrowRightClick}>
 				<mwc-icon>arrow_forward</mwc-icon>
 			</wired-icon-button>
 		</div>
 		{#if date}
-			<h6 class="date">{date}</h6>
+			<h6 class="date" data-test-id={headerTestIds.date}>{date}</h6>
 		{/if}
 	</div>
 	<wired-divider class="divider"></wired-divider>
