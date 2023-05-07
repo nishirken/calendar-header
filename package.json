@@ -20,7 +20,7 @@
     "@rollup/plugin-typescript": "^11.0.0",
     "@tsconfig/svelte": "^3.0.0",
     "@types/lodash": "4.14.182",
-    "calendar-test-ids": "github:nishirken/calendar-test-ids",
+    "calendar-test-ids": "github:nishirken/calendar-test-ids#1c5e682",
     "date-fns": "^2.29.3",
     "lodash": "4.17.21",
     "rollup": "^3.11.0",
@@ -31,7 +31,7 @@
     "svelte-preprocess": "^5.0.1",
     "ts-jest": "28.0.6",
     "typescript": ">= 4.7",
-    "wired-elements": "git+ssh://github.com/nishirken/wired-elements.git#107fc1f9ea33a7ba477799f414e4d8c72fd9d477"
+    "wired-elements": "github:nishirken/wired-elements.git#efc1835"
   },
   "devDependencies": {
     "@types/jest": "28.1.5",
