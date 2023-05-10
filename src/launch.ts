@@ -1,5 +1,4 @@
 import { addDays } from 'date-fns';
-import { Observable } from './Observable';
 import { render } from './render';
 
 const interval = {

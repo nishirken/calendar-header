@@ -45,10 +45,10 @@
 <style>
 	:root {
 		--margin-right: 20px;
+		font-family: 'Gloria Hallelujah';
 	}
 
 	.header {
-		height: 52px;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -56,7 +56,6 @@
 
 	.content {
 		display: flex;
-		max-height: 52px;
 		padding: 8px 20px;
 		box-sizing: border-box;
 		align-items: center;
@@ -82,5 +81,6 @@
 	.date {
 		font-size: 24px;
 		font-weight: 700;
+		font-family: 'Merriweather';
 	}
 </style>
