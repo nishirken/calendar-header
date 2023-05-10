@@ -1,6 +1,7 @@
 <script lang="ts">
 	import 'wired-elements/lib/wired-icon-button.js';
 	import 'wired-elements/lib/wired-button.js';
+	import 'wired-elements/lib/wired-divider.js';
 	import '@material/mwc-icon/mwc-icon';
 	import type {Bridge} from './Bridge';
 	import {formatDate} from './formatDate';
@@ -39,13 +40,12 @@
 			<h6 class="date" data-test-id={headerTestIds.date}>{date}</h6>
 		{/if}
 	</div>
-	<wired-divider class="divider"></wired-divider>
+	<wired-divider></wired-divider>
 </header>
 
 <style>
 	:root {
 		--margin-right: 20px;
-		font-family: 'Gloria Hallelujah';
 	}
 
 	.header {
@@ -79,6 +79,7 @@
 	}
 
 	.date {
+		margin: 0;
 		font-size: 24px;
 		font-weight: 700;
 		font-family: 'Merriweather';
