@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "start": "NODE_ENV=development rollup -w -c rollup.config.js",
+    "start": "NODE_ENV=development rollup -w -c rollup.config.dev.js",
     "build": "NODE_ENV=production rollup -c rollup.config.js",
     "test": "jest",
     "lint": "eslint ./src --ext .ts,.js,.svelte --quiet",
@@ -16,12 +16,11 @@
   "license": "MIT",
   "dependencies": {
     "@material/mwc-icon": "^0.27.0",
-    "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-terser": "^0.4.0",
     "@rollup/plugin-typescript": "^11.0.0",
     "@tsconfig/svelte": "^3.0.0",
     "@types/lodash": "4.14.182",
-    "calendar-test-ids": "github:nishirken/calendar-test-ids#1c5e682",
+    "calendar-test-ids": "github:nishirken/calendar-test-ids#master",
     "date-fns": "^2.29.3",
     "lodash": "4.17.21",
     "rollup": "^3.11.0",
@@ -35,6 +34,7 @@
     "wired-elements": "github:nishirken/wired-elements.git#efc1835"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@types/jest": "28.1.5",
     "@typescript-eslint/eslint-plugin": "^5.49.0",

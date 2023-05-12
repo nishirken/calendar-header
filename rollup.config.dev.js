@@ -3,13 +3,16 @@ const svelte = require('rollup-plugin-svelte');
 const sveltePreprocess = require('svelte-preprocess');
 const terser = require('@rollup/plugin-terser');
 const dtsBundle = require('rollup-plugin-dts-bundle');
+const serve = require('rollup-plugin-serve');
+const { nodeResolve } = require('@rollup/plugin-node-resolve');
+const commonjs = require('@rollup/plugin-commonjs');
 
 module.exports = [
   {
-    input: './src/render.ts',
+    input: './src/launch.ts',
     output: {
-      file: './dist/index.js',
-      format: 'es',
+      file: './public/index.js',
+      format: 'iife',
       sourcemap: true,
     },
     plugins: [
@@ -19,13 +22,11 @@ module.exports = [
       }),
       typescript({ tsconfig: 'tsconfig.prod.json' }),
       terser(),
-      dtsBundle({
-        bundle: {
-          name: 'calendar-header',
-          main: 'dist/render.d.ts',
-          out: 'index.d.ts',
-          removeSource: true,
-        },
+      nodeResolve(),
+      commonjs(),
+      serve({
+        contentBase: ['public'],
+        port: 3000,
       }),
     ],
   },
